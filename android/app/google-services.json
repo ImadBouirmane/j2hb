@@ -1,0 +1,54 @@
+{
+  "project_info": {
+    "project_number": "976925172460",
+    "project_id": "j2hbproject",
+    "storage_bucket": "j2hbproject.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:976925172460:android:9ca50fc5d5b830f9bbfbc9",
+        "android_client_info": {
+          "package_name": "com.j2hb.j2hb"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "976925172460-cr2h2dh9bk7fllobe7gp4ivg14jk1e8d.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.j2hb.j2hb",
+            "certificate_hash": "9bbb3186b2189ef16d8f272bdab59362c395cbb4"
+          }
+        },
+        {
+          "client_id": "976925172460-gs0q3shu11j1s4o8djqtlvng7nk1i4pt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBQY8msWZbuEnGBZonA0zbxFfLBROiWXz0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "976925172460-gs0q3shu11j1s4o8djqtlvng7nk1i4pt.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "976925172460-48188deq9csmkvbofe3921g53v6okbr2.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.j2hb.j2hb"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
