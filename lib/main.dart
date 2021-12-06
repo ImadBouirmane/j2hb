@@ -5,8 +5,8 @@ import 'package:flutter_localizations/flutter_localizations.dart';
 import 'auth/firebase_user_provider.dart';
 
 import '../flutter_flow/flutter_flow_theme.dart';
-import 'package:j2hb/sign_in/sign_in_widget.dart';
-import 'package:j2hb/home_page/home_page_widget.dart';
+import 'package:j2hb/app_language/app_language_widget.dart';
+import 'package:j2hb/accueil/accueil_widget.dart';
 import 'package:flutter_spinkit/flutter_spinkit.dart';
 
 void main() async {
@@ -50,16 +50,15 @@ class _MyAppState extends State<MyApp> {
                 child: Builder(
                   builder: (context) => Image.asset(
                     'assets/images/Logo.jpeg',
-                    width: 250,
-                    height: 250,
-                    fit: BoxFit.contain,
+                    width: 500,
+                    fit: BoxFit.cover,
                   ),
                 ),
               ),
             )
           : currentUser.loggedIn
-              ? HomePageWidget()
-              : SignInWidget(),
+              ? AccueilWidget()
+              : AppLanguageWidget(),
     );
   }
 }

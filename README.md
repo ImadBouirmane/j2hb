@@ -1,6 +1,6 @@
-# J2HB
+# j2hb
 
-A new digital solution based on app to make the experience of Driver License more fast and open to success
+A new Flutter project.
 
 ## Getting Started
 
