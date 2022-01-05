@@ -25,7 +25,10 @@ Future<User> signInOrCreateAccount(
   }
 }
 
-Future signOut() => FirebaseAuth.instance.signOut();
+Future signOut() {
+  _currentJwtToken = '';
+  FirebaseAuth.instance.signOut();
+}
 
 Future resetPassword({String email, BuildContext context}) async {
   try {
@@ -45,6 +48,8 @@ Future resetPassword({String email, BuildContext context}) async {
 Future sendEmailVerification() async =>
     currentUser?.user?.sendEmailVerification();
 
+String _currentJwtToken = '';
+
 String get currentUserEmail => currentUser?.user?.email ?? '';
 
 String get currentUserUid => currentUser?.user?.uid ?? '';
@@ -54,6 +59,8 @@ String get currentUserDisplayName => currentUser?.user?.displayName ?? '';
 String get currentUserPhoto => currentUser?.user?.photoURL ?? '';
 
 String get currentPhoneNumber => currentUser?.user?.phoneNumber ?? '';
+
+String get currentJwtToken => _currentJwtToken ?? '';
 
 bool get currentUserEmailVerified => currentUser?.user?.emailVerified ?? false;
 

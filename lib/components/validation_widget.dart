@@ -18,13 +18,15 @@ class _ValidationWidgetState extends State<ValidationWidget>
     'containerOnPageLoadAnimation': AnimationInfo(
       trigger: AnimationTrigger.onPageLoad,
       duration: 600,
-      fadeIn: true,
-      slideOffset: Offset(0, -41),
+      initialOpacity: 0,
+      finalOpacity: 0,
+      slideOffset: Offset(0, -65),
     ),
     'textOnPageLoadAnimation': AnimationInfo(
       trigger: AnimationTrigger.onPageLoad,
       duration: 600,
-      fadeIn: true,
+      initialOpacity: 0,
+      finalOpacity: 0,
       slideOffset: Offset(0, -48),
     ),
   };
@@ -88,7 +90,7 @@ class _ValidationWidgetState extends State<ValidationWidget>
                         color: FlutterFlowTheme.tertiaryColor,
                         size: 30,
                       ),
-                    ).animated([animationsMap['containerOnPageLoadAnimation']])
+                    ).animated([animationsMap['containerOnPageLoadAnimation']]),
                   ],
                 ),
                 Row(
@@ -103,9 +105,9 @@ class _ValidationWidgetState extends State<ValidationWidget>
                         fontSize: 20,
                         fontWeight: FontWeight.bold,
                       ),
-                    ).animated([animationsMap['textOnPageLoadAnimation']])
+                    ).animated([animationsMap['textOnPageLoadAnimation']]),
                   ],
-                )
+                ),
               ],
             ),
           ),

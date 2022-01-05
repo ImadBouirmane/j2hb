@@ -27,6 +27,10 @@ abstract class SeriesRecord
       .snapshots()
       .map((s) => serializers.deserializeWith(serializer, serializedData(s)));
 
+  static Future<SeriesRecord> getDocumentOnce(DocumentReference ref) => ref
+      .get()
+      .then((s) => serializers.deserializeWith(serializer, serializedData(s)));
+
   SeriesRecord._();
   factory SeriesRecord([void Function(SeriesRecordBuilder) updates]) =
       _$SeriesRecord;

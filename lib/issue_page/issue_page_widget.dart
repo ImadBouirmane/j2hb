@@ -116,7 +116,7 @@ class _IssuePageWidgetState extends State<IssuePageWidget> {
                             fontWeight: FontWeight.w600,
                           ),
                         ),
-                      )
+                      ),
                     ],
                   ),
                 ),
@@ -156,7 +156,7 @@ class _IssuePageWidgetState extends State<IssuePageWidget> {
                           ),
                           maxLines: 10,
                         ),
-                      )
+                      ),
                     ],
                   ),
                 ),
@@ -176,19 +176,13 @@ class _IssuePageWidgetState extends State<IssuePageWidget> {
                           height: 200,
                           decoration: BoxDecoration(
                             color: FlutterFlowTheme.tertiaryColor,
-                            image: DecorationImage(
-                              fit: BoxFit.scaleDown,
-                              image: Image.asset(
-                                'assets/images/outline_bug_report_black_24dp.png',
-                              ).image,
-                            ),
                             borderRadius: BorderRadius.circular(10),
                             border: Border.all(
                               color: FlutterFlowTheme.primaryColor,
                             ),
                           ),
                         ),
-                      )
+                      ),
                     ],
                   ),
                 ),
@@ -243,7 +237,7 @@ class _IssuePageWidgetState extends State<IssuePageWidget> {
                           ),
                           borderRadius: 12,
                         ),
-                      )
+                      ),
                     ],
                   ),
                 ),
@@ -306,9 +300,9 @@ class _IssuePageWidgetState extends State<IssuePageWidget> {
                         ),
                         borderRadius: 12,
                       ),
-                    )
+                    ),
                   ],
-                )
+                ),
               ],
             ),
           ),

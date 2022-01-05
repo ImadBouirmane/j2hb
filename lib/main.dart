@@ -12,6 +12,7 @@ import 'package:flutter_spinkit/flutter_spinkit.dart';
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp();
+
   runApp(MyApp());
 }
 
@@ -24,12 +25,15 @@ class MyApp extends StatefulWidget {
 class _MyAppState extends State<MyApp> {
   Stream<J2hbFirebaseUser> userStream;
   J2hbFirebaseUser initialUser;
+  bool displaySplashImage = true;
 
   @override
   void initState() {
     super.initState();
     userStream = j2hbFirebaseUserStream()
       ..listen((user) => initialUser ?? setState(() => initialUser = user));
+    Future.delayed(
+        Duration(seconds: 1), () => setState(() => displaySplashImage = false));
   }
 
   @override
@@ -43,7 +47,7 @@ class _MyAppState extends State<MyApp> {
       ],
       supportedLocales: const [Locale('en', '')],
       theme: ThemeData(primarySwatch: Colors.blue),
-      home: initialUser == null
+      home: initialUser == null || displaySplashImage
           ? Container(
               color: Colors.transparent,
               child: Center(

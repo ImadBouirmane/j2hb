@@ -42,6 +42,10 @@ abstract class ReportRecord
       .snapshots()
       .map((s) => serializers.deserializeWith(serializer, serializedData(s)));
 
+  static Future<ReportRecord> getDocumentOnce(DocumentReference ref) => ref
+      .get()
+      .then((s) => serializers.deserializeWith(serializer, serializedData(s)));
+
   ReportRecord._();
   factory ReportRecord([void Function(ReportRecordBuilder) updates]) =
       _$ReportRecord;

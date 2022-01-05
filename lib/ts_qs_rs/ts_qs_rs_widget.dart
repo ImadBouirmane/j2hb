@@ -61,7 +61,7 @@ class _TsQsRsWidgetState extends State<TsQsRsWidget> {
                 ),
               );
             },
-          )
+          ),
         ],
         centerTitle: false,
         elevation: 4,
@@ -103,7 +103,7 @@ class _TsQsRsWidgetState extends State<TsQsRsWidget> {
                                 fontFamily: 'Open Sans',
                                 color: FlutterFlowTheme.secondaryColor,
                               ),
-                            )
+                            ),
                           ],
                         ),
                         Row(
@@ -138,12 +138,12 @@ class _TsQsRsWidgetState extends State<TsQsRsWidget> {
                               toggleable: false,
                               horizontalAlignment: WrapAlignment.start,
                               verticalAlignment: WrapCrossAlignment.start,
-                            )
+                            ),
                           ],
-                        )
+                        ),
                       ],
                     ),
-                  )
+                  ),
                 ],
               ),
             ),
@@ -180,7 +180,7 @@ class _TsQsRsWidgetState extends State<TsQsRsWidget> {
                                 fontFamily: 'Open Sans',
                                 color: FlutterFlowTheme.secondaryColor,
                               ),
-                            )
+                            ),
                           ],
                         ),
                         Column(
@@ -208,7 +208,7 @@ class _TsQsRsWidgetState extends State<TsQsRsWidget> {
                                     controlAffinity:
                                         ListTileControlAffinity.leading,
                                   ),
-                                )
+                                ),
                               ],
                             ),
                             Row(
@@ -229,7 +229,7 @@ class _TsQsRsWidgetState extends State<TsQsRsWidget> {
                                     controlAffinity:
                                         ListTileControlAffinity.leading,
                                   ),
-                                )
+                                ),
                               ],
                             ),
                             Row(
@@ -250,7 +250,7 @@ class _TsQsRsWidgetState extends State<TsQsRsWidget> {
                                     controlAffinity:
                                         ListTileControlAffinity.leading,
                                   ),
-                                )
+                                ),
                               ],
                             ),
                             Row(
@@ -271,14 +271,14 @@ class _TsQsRsWidgetState extends State<TsQsRsWidget> {
                                     controlAffinity:
                                         ListTileControlAffinity.leading,
                                   ),
-                                )
+                                ),
                               ],
-                            )
+                            ),
                           ],
-                        )
+                        ),
                       ],
                     ),
-                  )
+                  ),
                 ],
               ),
             ),
@@ -315,7 +315,7 @@ class _TsQsRsWidgetState extends State<TsQsRsWidget> {
                                 fontFamily: 'Open Sans',
                                 color: FlutterFlowTheme.secondaryColor,
                               ),
-                            )
+                            ),
                           ],
                         ),
                         Row(
@@ -357,16 +357,16 @@ class _TsQsRsWidgetState extends State<TsQsRsWidget> {
                                 ),
                                 chipSpacing: 10,
                               ),
-                            )
+                            ),
                           ],
-                        )
+                        ),
                       ],
                     ),
-                  )
+                  ),
                 ],
               ),
             ),
-          )
+          ),
         ],
       ),
     );

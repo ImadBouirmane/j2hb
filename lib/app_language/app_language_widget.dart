@@ -63,7 +63,7 @@ class _AppLanguageWidgetState extends State<AppLanguageWidget>
                     'assets/images/Logo.jpeg',
                     fit: BoxFit.fitHeight,
                   ),
-                )
+                ),
               ],
             ),
           ),
@@ -102,7 +102,7 @@ class _AppLanguageWidgetState extends State<AppLanguageWidget>
                                 color: FlutterFlowTheme.tertiaryColor,
                                 fontWeight: FontWeight.w600,
                               ),
-                            )
+                            ),
                           ],
                         ),
                       ),
@@ -143,7 +143,7 @@ class _AppLanguageWidgetState extends State<AppLanguageWidget>
                               ),
                               borderRadius: 12,
                             ),
-                          )
+                          ),
                         ],
                       ),
                       Padding(
@@ -160,7 +160,7 @@ class _AppLanguageWidgetState extends State<AppLanguageWidget>
                                 color: FlutterFlowTheme.tertiaryColor,
                                 fontWeight: FontWeight.w600,
                               ),
-                            )
+                            ),
                           ],
                         ),
                       ),
@@ -193,15 +193,15 @@ class _AppLanguageWidgetState extends State<AppLanguageWidget>
                               ),
                               borderRadius: 12,
                             ),
-                          )
+                          ),
                         ],
-                      )
+                      ),
                     ],
                   ),
                 ),
               ),
             ).animated([animationsMap['containerOnActionTriggerAnimation']]),
-          )
+          ),
         ],
       ),
     );

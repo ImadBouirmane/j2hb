@@ -43,6 +43,10 @@ abstract class FeedBackRecord
       .snapshots()
       .map((s) => serializers.deserializeWith(serializer, serializedData(s)));
 
+  static Future<FeedBackRecord> getDocumentOnce(DocumentReference ref) => ref
+      .get()
+      .then((s) => serializers.deserializeWith(serializer, serializedData(s)));
+
   FeedBackRecord._();
   factory FeedBackRecord([void Function(FeedBackRecordBuilder) updates]) =
       _$FeedBackRecord;

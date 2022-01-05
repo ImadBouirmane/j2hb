@@ -94,7 +94,7 @@ class _FeedbackPageWidgetState extends State<FeedbackPageWidget> {
                         fontWeight: FontWeight.w600,
                       ),
                     ),
-                  )
+                  ),
                 ],
               ),
             ),
@@ -134,7 +134,7 @@ class _FeedbackPageWidgetState extends State<FeedbackPageWidget> {
                       ),
                       maxLines: 10,
                     ),
-                  )
+                  ),
                 ],
               ),
             ),
@@ -166,7 +166,7 @@ class _FeedbackPageWidgetState extends State<FeedbackPageWidget> {
                         ),
                       ),
                     ),
-                  )
+                  ),
                 ],
               ),
             ),
@@ -220,7 +220,7 @@ class _FeedbackPageWidgetState extends State<FeedbackPageWidget> {
                       ),
                       borderRadius: 12,
                     ),
-                  )
+                  ),
                 ],
               ),
             ),
@@ -284,9 +284,9 @@ class _FeedbackPageWidgetState extends State<FeedbackPageWidget> {
                     ),
                     borderRadius: 12,
                   ),
-                )
+                ),
               ],
-            )
+            ),
           ],
         ),
       ),

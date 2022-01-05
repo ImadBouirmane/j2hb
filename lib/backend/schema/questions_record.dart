@@ -44,6 +44,10 @@ abstract class QuestionsRecord
       .snapshots()
       .map((s) => serializers.deserializeWith(serializer, serializedData(s)));
 
+  static Future<QuestionsRecord> getDocumentOnce(DocumentReference ref) => ref
+      .get()
+      .then((s) => serializers.deserializeWith(serializer, serializedData(s)));
+
   QuestionsRecord._();
   factory QuestionsRecord([void Function(QuestionsRecordBuilder) updates]) =
       _$QuestionsRecord;

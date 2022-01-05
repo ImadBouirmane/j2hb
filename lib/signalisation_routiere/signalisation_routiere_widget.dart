@@ -89,7 +89,7 @@ class _SignalisationRoutiereWidgetState
                                   fontWeight: FontWeight.w600,
                                 ),
                               ),
-                            )
+                            ),
                           ],
                         ),
                         Text(
@@ -102,7 +102,7 @@ class _SignalisationRoutiereWidgetState
                             Text(
                               '- Les lignes médianes, qui peuvent  \n   être continues ou discontinues, et qui \n   permettent de séparer les différentes \n   voies de circulation\n- Les lignes de rives, qui créent une \n   démarcation entre l’accotement et la \n   chaussée\n- Les flèches, qui permettent d’ \n   indiquer les directions associées à \n   chaque voie de circulation\n- Les lignes transversales, qui \n   indiquent où céder le passage \n   (STOP, Cédez-le-passage, feux tricolores), \n   où traverser (passages piétons), etc …',
                               style: FlutterFlowTheme.bodyText1,
-                            )
+                            ),
                           ],
                         ),
                         Padding(
@@ -132,7 +132,7 @@ class _SignalisationRoutiereWidgetState
                                   fontWeight: FontWeight.w600,
                                 ),
                               ),
-                            )
+                            ),
                           ],
                         ),
                         Text(
@@ -170,7 +170,7 @@ class _SignalisationRoutiereWidgetState
                                   fontWeight: FontWeight.w600,
                                 ),
                               ),
-                            )
+                            ),
                           ],
                         ),
                         Text(
@@ -204,7 +204,7 @@ class _SignalisationRoutiereWidgetState
                                   fontWeight: FontWeight.w600,
                                 ),
                               ),
-                            )
+                            ),
                           ],
                         ),
                         Text(
@@ -217,7 +217,7 @@ class _SignalisationRoutiereWidgetState
                             Text(
                               '- Triangulaires (danger)\n- Ronds (prescription)\n- Carrés (indication)\n- Flèches (direction)',
                               style: FlutterFlowTheme.bodyText1,
-                            )
+                            ),
                           ],
                         ),
                         Row(
@@ -234,7 +234,7 @@ class _SignalisationRoutiereWidgetState
                                   fontWeight: FontWeight.w600,
                                 ),
                               ),
-                            )
+                            ),
                           ],
                         ),
                         Text(
@@ -247,12 +247,12 @@ class _SignalisationRoutiereWidgetState
                             Text(
                               '- Rouge (interdiction ou danger)\n- Bleu (obligation ou indication)\n- Jaune (temporaire)\n- Vert ou marron (différents types de \n   localisations)',
                               style: FlutterFlowTheme.bodyText1,
-                            )
+                            ),
                           ],
-                        )
+                        ),
                       ],
                     ),
-                  )
+                  ),
                 ],
               ),
             ),

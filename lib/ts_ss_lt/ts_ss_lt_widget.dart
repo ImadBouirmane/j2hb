@@ -156,7 +156,7 @@ class _TsSsLtWidgetState extends State<TsSsLtWidget>
                           onPressed: () {
                             print('IconButton pressed ...');
                           },
-                        )
+                        ),
                       ],
                     ),
                   ),
@@ -208,7 +208,7 @@ class _TsSsLtWidgetState extends State<TsSsLtWidget>
                         onPressed: () {
                           print('IconButton pressed ...');
                         },
-                      )
+                      ),
                     ],
                   ),
                 ),
@@ -259,7 +259,7 @@ class _TsSsLtWidgetState extends State<TsSsLtWidget>
                         onPressed: () {
                           print('IconButton pressed ...');
                         },
-                      )
+                      ),
                     ],
                   ),
                 ),
@@ -310,7 +310,7 @@ class _TsSsLtWidgetState extends State<TsSsLtWidget>
                         onPressed: () {
                           print('IconButton pressed ...');
                         },
-                      )
+                      ),
                     ],
                   ),
                 ),
@@ -361,7 +361,7 @@ class _TsSsLtWidgetState extends State<TsSsLtWidget>
                         onPressed: () {
                           print('IconButton pressed ...');
                         },
-                      )
+                      ),
                     ],
                   ),
                 ),
@@ -412,13 +412,13 @@ class _TsSsLtWidgetState extends State<TsSsLtWidget>
                         onPressed: () {
                           print('IconButton pressed ...');
                         },
-                      )
+                      ),
                     ],
                   ),
                 ),
               ),
             ).animated([animationsMap['containerOnPageLoadAnimation6']]),
-          )
+          ),
         ],
       ),
     );

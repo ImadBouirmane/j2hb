@@ -91,9 +91,9 @@ class _TsResultWidgetState extends State<TsResultWidget>
                     ),
                   );
                 },
-              )
+              ),
             ],
-          )
+          ),
         ],
         centerTitle: false,
         elevation: 4,
@@ -137,7 +137,7 @@ class _TsResultWidgetState extends State<TsResultWidget>
                 color: FlutterFlowTheme.tertiaryColor,
                 fontWeight: FontWeight.w600,
               ),
-            )
+            ),
           ],
         ),
       ),
@@ -158,7 +158,7 @@ class _TsResultWidgetState extends State<TsResultWidget>
                     color: FlutterFlowTheme.secondaryColor,
                     fontWeight: FontWeight.w600,
                   ),
-                )
+                ),
               ],
             ).animated([animationsMap['rowOnPageLoadAnimation1']]),
           ),
@@ -180,9 +180,9 @@ class _TsResultWidgetState extends State<TsResultWidget>
                   color: FlutterFlowTheme.primaryColor,
                   fontWeight: FontWeight.w600,
                 ),
-              )
+              ),
             ],
-          ).animated([animationsMap['rowOnPageLoadAnimation2']])
+          ).animated([animationsMap['rowOnPageLoadAnimation2']]),
         ],
       ),
     );

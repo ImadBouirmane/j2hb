@@ -90,7 +90,7 @@ class _PreExamWidgetState extends State<PreExamWidget>
                 FontAwesomeIcons.exclamationCircle,
                 color: FlutterFlowTheme.primaryColor,
                 size: 50,
-              ).animated([animationsMap['iconOnPageLoadAnimation']])
+              ).animated([animationsMap['iconOnPageLoadAnimation']]),
             ],
           ),
           Padding(
@@ -190,12 +190,12 @@ class _PreExamWidgetState extends State<PreExamWidget>
                         ),
                         borderRadius: 12,
                       ),
-                    ).animated([animationsMap['buttonOnPageLoadAnimation2']])
+                    ).animated([animationsMap['buttonOnPageLoadAnimation2']]),
                   ],
                 ),
-              )
+              ),
             ],
-          )
+          ),
         ],
       ),
     );

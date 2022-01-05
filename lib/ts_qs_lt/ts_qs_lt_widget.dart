@@ -1,4 +1,3 @@
-import '../backend/backend.dart';
 import '../flutter_flow/flutter_flow_animations.dart';
 import '../flutter_flow/flutter_flow_theme.dart';
 import '../flutter_flow/flutter_flow_util.dart';
@@ -18,7 +17,56 @@ class TsQsLtWidget extends StatefulWidget {
 class _TsQsLtWidgetState extends State<TsQsLtWidget>
     with TickerProviderStateMixin {
   final animationsMap = {
-    'buttonOnPageLoadAnimation': AnimationInfo(
+    'buttonOnPageLoadAnimation1': AnimationInfo(
+      curve: Curves.linear,
+      trigger: AnimationTrigger.onPageLoad,
+      duration: 600,
+      delay: 270,
+      fadeIn: true,
+    ),
+    'buttonOnPageLoadAnimation2': AnimationInfo(
+      curve: Curves.linear,
+      trigger: AnimationTrigger.onPageLoad,
+      duration: 600,
+      delay: 270,
+      fadeIn: true,
+    ),
+    'buttonOnPageLoadAnimation3': AnimationInfo(
+      curve: Curves.linear,
+      trigger: AnimationTrigger.onPageLoad,
+      duration: 600,
+      delay: 270,
+      fadeIn: true,
+    ),
+    'buttonOnPageLoadAnimation4': AnimationInfo(
+      curve: Curves.linear,
+      trigger: AnimationTrigger.onPageLoad,
+      duration: 600,
+      delay: 270,
+      fadeIn: true,
+    ),
+    'buttonOnPageLoadAnimation5': AnimationInfo(
+      curve: Curves.linear,
+      trigger: AnimationTrigger.onPageLoad,
+      duration: 600,
+      delay: 270,
+      fadeIn: true,
+    ),
+    'buttonOnPageLoadAnimation6': AnimationInfo(
+      curve: Curves.linear,
+      trigger: AnimationTrigger.onPageLoad,
+      duration: 600,
+      delay: 270,
+      fadeIn: true,
+    ),
+    'buttonOnPageLoadAnimation7': AnimationInfo(
+      curve: Curves.linear,
+      trigger: AnimationTrigger.onPageLoad,
+      duration: 600,
+      delay: 270,
+      fadeIn: true,
+    ),
+    'buttonOnPageLoadAnimation8': AnimationInfo(
       curve: Curves.linear,
       trigger: AnimationTrigger.onPageLoad,
       duration: 600,
@@ -58,90 +106,402 @@ class _TsQsLtWidgetState extends State<TsQsLtWidget>
         elevation: 4,
       ),
       backgroundColor: FlutterFlowTheme.tertiaryColor,
-      body: StreamBuilder<List<SeriesRecord>>(
-        stream: querySeriesRecord(
-          limit: 40,
+      body: GridView(
+        padding: EdgeInsets.zero,
+        gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+          crossAxisCount: 4,
+          crossAxisSpacing: 10,
+          mainAxisSpacing: 10,
+          childAspectRatio: 1,
         ),
-        builder: (context, snapshot) {
-          // Customize what your widget looks like when it's loading.
-          if (!snapshot.hasData) {
-            return Center(
-              child: SizedBox(
-                width: 30,
-                height: 30,
-                child: SpinKitDualRing(
-                  color: Color(0xFFA32020),
-                  size: 30,
-                ),
+        shrinkWrap: true,
+        scrollDirection: Axis.vertical,
+        children: [
+          Padding(
+            padding: EdgeInsetsDirectional.fromSTEB(10, 10, 10, 10),
+            child: Material(
+              color: Colors.transparent,
+              elevation: 5,
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(10),
               ),
-            );
-          }
-          List<SeriesRecord> gridViewSeriesRecordList = snapshot.data;
-          return GridView.builder(
-            padding: EdgeInsets.zero,
-            gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-              crossAxisCount: 4,
-              crossAxisSpacing: 10,
-              mainAxisSpacing: 10,
-              childAspectRatio: 1,
-            ),
-            shrinkWrap: true,
-            scrollDirection: Axis.vertical,
-            itemCount: gridViewSeriesRecordList.length,
-            itemBuilder: (context, gridViewIndex) {
-              final gridViewSeriesRecord =
-                  gridViewSeriesRecordList[gridViewIndex];
-              return Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(10, 10, 10, 10),
-                child: Material(
-                  color: Colors.transparent,
-                  elevation: 5,
-                  shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(10),
-                  ),
-                  child: Container(
+              child: Container(
+                width: 100,
+                height: 100,
+                decoration: BoxDecoration(
+                  color: FlutterFlowTheme.tertiaryColor,
+                  borderRadius: BorderRadius.circular(10),
+                ),
+                child: FFButtonWidget(
+                  onPressed: () async {
+                    await Navigator.push(
+                      context,
+                      PageTransition(
+                        type: PageTransitionType.fade,
+                        duration: Duration(milliseconds: 300),
+                        reverseDuration: Duration(milliseconds: 300),
+                        child: TsQsType1Widget(),
+                      ),
+                    );
+                  },
+                  text: '1',
+                  options: FFButtonOptions(
                     width: 100,
                     height: 100,
-                    decoration: BoxDecoration(
-                      color: FlutterFlowTheme.tertiaryColor,
-                      borderRadius: BorderRadius.circular(10),
+                    color: FlutterFlowTheme.tertiaryColor,
+                    textStyle: FlutterFlowTheme.subtitle2.override(
+                      fontFamily: 'Open Sans',
+                      color: FlutterFlowTheme.primaryColor,
+                      fontWeight: FontWeight.w600,
                     ),
-                    child: FFButtonWidget(
-                      onPressed: () async {
-                        await Navigator.push(
-                          context,
-                          PageTransition(
-                            type: PageTransitionType.fade,
-                            duration: Duration(milliseconds: 300),
-                            reverseDuration: Duration(milliseconds: 300),
-                            child: TsQsType1Widget(),
-                          ),
-                        );
-                      },
-                      text: 'N',
-                      options: FFButtonOptions(
-                        width: 100,
-                        height: 100,
-                        color: FlutterFlowTheme.tertiaryColor,
-                        textStyle: FlutterFlowTheme.subtitle2.override(
-                          fontFamily: 'Open Sans',
-                          color: FlutterFlowTheme.primaryColor,
-                          fontWeight: FontWeight.w600,
-                        ),
-                        elevation: 5,
-                        borderSide: BorderSide(
-                          color: Colors.transparent,
-                          width: 1,
-                        ),
-                        borderRadius: 10,
-                      ),
-                    ).animated([animationsMap['buttonOnPageLoadAnimation']]),
+                    elevation: 5,
+                    borderSide: BorderSide(
+                      color: Colors.transparent,
+                      width: 1,
+                    ),
+                    borderRadius: 10,
                   ),
+                ).animated([animationsMap['buttonOnPageLoadAnimation1']]),
+              ),
+            ),
+          ),
+          Padding(
+            padding: EdgeInsetsDirectional.fromSTEB(10, 10, 10, 10),
+            child: Material(
+              color: Colors.transparent,
+              elevation: 5,
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(10),
+              ),
+              child: Container(
+                width: 100,
+                height: 100,
+                decoration: BoxDecoration(
+                  color: FlutterFlowTheme.tertiaryColor,
+                  borderRadius: BorderRadius.circular(10),
                 ),
-              );
-            },
-          );
-        },
+                child: FFButtonWidget(
+                  onPressed: () async {
+                    await Navigator.push(
+                      context,
+                      PageTransition(
+                        type: PageTransitionType.fade,
+                        duration: Duration(milliseconds: 300),
+                        reverseDuration: Duration(milliseconds: 300),
+                        child: TsQsType1Widget(),
+                      ),
+                    );
+                  },
+                  text: '2',
+                  options: FFButtonOptions(
+                    width: 100,
+                    height: 100,
+                    color: FlutterFlowTheme.tertiaryColor,
+                    textStyle: FlutterFlowTheme.subtitle2.override(
+                      fontFamily: 'Open Sans',
+                      color: FlutterFlowTheme.primaryColor,
+                      fontWeight: FontWeight.w600,
+                    ),
+                    elevation: 5,
+                    borderSide: BorderSide(
+                      color: Colors.transparent,
+                      width: 1,
+                    ),
+                    borderRadius: 10,
+                  ),
+                ).animated([animationsMap['buttonOnPageLoadAnimation2']]),
+              ),
+            ),
+          ),
+          Padding(
+            padding: EdgeInsetsDirectional.fromSTEB(10, 10, 10, 10),
+            child: Material(
+              color: Colors.transparent,
+              elevation: 5,
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(10),
+              ),
+              child: Container(
+                width: 100,
+                height: 100,
+                decoration: BoxDecoration(
+                  color: FlutterFlowTheme.tertiaryColor,
+                  borderRadius: BorderRadius.circular(10),
+                ),
+                child: FFButtonWidget(
+                  onPressed: () async {
+                    await Navigator.push(
+                      context,
+                      PageTransition(
+                        type: PageTransitionType.fade,
+                        duration: Duration(milliseconds: 300),
+                        reverseDuration: Duration(milliseconds: 300),
+                        child: TsQsType1Widget(),
+                      ),
+                    );
+                  },
+                  text: '3',
+                  options: FFButtonOptions(
+                    width: 100,
+                    height: 100,
+                    color: FlutterFlowTheme.tertiaryColor,
+                    textStyle: FlutterFlowTheme.subtitle2.override(
+                      fontFamily: 'Open Sans',
+                      color: FlutterFlowTheme.primaryColor,
+                      fontWeight: FontWeight.w600,
+                    ),
+                    elevation: 5,
+                    borderSide: BorderSide(
+                      color: Colors.transparent,
+                      width: 1,
+                    ),
+                    borderRadius: 10,
+                  ),
+                ).animated([animationsMap['buttonOnPageLoadAnimation3']]),
+              ),
+            ),
+          ),
+          Padding(
+            padding: EdgeInsetsDirectional.fromSTEB(10, 10, 10, 10),
+            child: Material(
+              color: Colors.transparent,
+              elevation: 5,
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(10),
+              ),
+              child: Container(
+                width: 100,
+                height: 100,
+                decoration: BoxDecoration(
+                  color: FlutterFlowTheme.tertiaryColor,
+                  borderRadius: BorderRadius.circular(10),
+                ),
+                child: FFButtonWidget(
+                  onPressed: () async {
+                    await Navigator.push(
+                      context,
+                      PageTransition(
+                        type: PageTransitionType.fade,
+                        duration: Duration(milliseconds: 300),
+                        reverseDuration: Duration(milliseconds: 300),
+                        child: TsQsType1Widget(),
+                      ),
+                    );
+                  },
+                  text: '4',
+                  options: FFButtonOptions(
+                    width: 100,
+                    height: 100,
+                    color: FlutterFlowTheme.tertiaryColor,
+                    textStyle: FlutterFlowTheme.subtitle2.override(
+                      fontFamily: 'Open Sans',
+                      color: FlutterFlowTheme.primaryColor,
+                      fontWeight: FontWeight.w600,
+                    ),
+                    elevation: 5,
+                    borderSide: BorderSide(
+                      color: Colors.transparent,
+                      width: 1,
+                    ),
+                    borderRadius: 10,
+                  ),
+                ).animated([animationsMap['buttonOnPageLoadAnimation4']]),
+              ),
+            ),
+          ),
+          Padding(
+            padding: EdgeInsetsDirectional.fromSTEB(10, 10, 10, 10),
+            child: Material(
+              color: Colors.transparent,
+              elevation: 5,
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(10),
+              ),
+              child: Container(
+                width: 100,
+                height: 100,
+                decoration: BoxDecoration(
+                  color: FlutterFlowTheme.tertiaryColor,
+                  borderRadius: BorderRadius.circular(10),
+                ),
+                child: FFButtonWidget(
+                  onPressed: () async {
+                    await Navigator.push(
+                      context,
+                      PageTransition(
+                        type: PageTransitionType.fade,
+                        duration: Duration(milliseconds: 300),
+                        reverseDuration: Duration(milliseconds: 300),
+                        child: TsQsType1Widget(),
+                      ),
+                    );
+                  },
+                  text: '5',
+                  options: FFButtonOptions(
+                    width: 100,
+                    height: 100,
+                    color: FlutterFlowTheme.tertiaryColor,
+                    textStyle: FlutterFlowTheme.subtitle2.override(
+                      fontFamily: 'Open Sans',
+                      color: FlutterFlowTheme.primaryColor,
+                      fontWeight: FontWeight.w600,
+                    ),
+                    elevation: 5,
+                    borderSide: BorderSide(
+                      color: Colors.transparent,
+                      width: 1,
+                    ),
+                    borderRadius: 10,
+                  ),
+                ).animated([animationsMap['buttonOnPageLoadAnimation5']]),
+              ),
+            ),
+          ),
+          Padding(
+            padding: EdgeInsetsDirectional.fromSTEB(10, 10, 10, 10),
+            child: Material(
+              color: Colors.transparent,
+              elevation: 5,
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(10),
+              ),
+              child: Container(
+                width: 100,
+                height: 100,
+                decoration: BoxDecoration(
+                  color: FlutterFlowTheme.tertiaryColor,
+                  borderRadius: BorderRadius.circular(10),
+                ),
+                child: FFButtonWidget(
+                  onPressed: () async {
+                    await Navigator.push(
+                      context,
+                      PageTransition(
+                        type: PageTransitionType.fade,
+                        duration: Duration(milliseconds: 300),
+                        reverseDuration: Duration(milliseconds: 300),
+                        child: TsQsType1Widget(),
+                      ),
+                    );
+                  },
+                  text: '6',
+                  options: FFButtonOptions(
+                    width: 100,
+                    height: 100,
+                    color: FlutterFlowTheme.tertiaryColor,
+                    textStyle: FlutterFlowTheme.subtitle2.override(
+                      fontFamily: 'Open Sans',
+                      color: FlutterFlowTheme.primaryColor,
+                      fontWeight: FontWeight.w600,
+                    ),
+                    elevation: 5,
+                    borderSide: BorderSide(
+                      color: Colors.transparent,
+                      width: 1,
+                    ),
+                    borderRadius: 10,
+                  ),
+                ).animated([animationsMap['buttonOnPageLoadAnimation6']]),
+              ),
+            ),
+          ),
+          Padding(
+            padding: EdgeInsetsDirectional.fromSTEB(10, 10, 10, 10),
+            child: Material(
+              color: Colors.transparent,
+              elevation: 5,
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(10),
+              ),
+              child: Container(
+                width: 100,
+                height: 100,
+                decoration: BoxDecoration(
+                  color: FlutterFlowTheme.tertiaryColor,
+                  borderRadius: BorderRadius.circular(10),
+                ),
+                child: FFButtonWidget(
+                  onPressed: () async {
+                    await Navigator.push(
+                      context,
+                      PageTransition(
+                        type: PageTransitionType.fade,
+                        duration: Duration(milliseconds: 300),
+                        reverseDuration: Duration(milliseconds: 300),
+                        child: TsQsType1Widget(),
+                      ),
+                    );
+                  },
+                  text: '7',
+                  options: FFButtonOptions(
+                    width: 100,
+                    height: 100,
+                    color: FlutterFlowTheme.tertiaryColor,
+                    textStyle: FlutterFlowTheme.subtitle2.override(
+                      fontFamily: 'Open Sans',
+                      color: FlutterFlowTheme.primaryColor,
+                      fontWeight: FontWeight.w600,
+                    ),
+                    elevation: 5,
+                    borderSide: BorderSide(
+                      color: Colors.transparent,
+                      width: 1,
+                    ),
+                    borderRadius: 10,
+                  ),
+                ).animated([animationsMap['buttonOnPageLoadAnimation7']]),
+              ),
+            ),
+          ),
+          Padding(
+            padding: EdgeInsetsDirectional.fromSTEB(10, 10, 10, 10),
+            child: Material(
+              color: Colors.transparent,
+              elevation: 5,
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(10),
+              ),
+              child: Container(
+                width: 100,
+                height: 100,
+                decoration: BoxDecoration(
+                  color: FlutterFlowTheme.tertiaryColor,
+                  borderRadius: BorderRadius.circular(10),
+                ),
+                child: FFButtonWidget(
+                  onPressed: () async {
+                    await Navigator.push(
+                      context,
+                      PageTransition(
+                        type: PageTransitionType.fade,
+                        duration: Duration(milliseconds: 300),
+                        reverseDuration: Duration(milliseconds: 300),
+                        child: TsQsType1Widget(),
+                      ),
+                    );
+                  },
+                  text: '8',
+                  options: FFButtonOptions(
+                    width: 100,
+                    height: 100,
+                    color: FlutterFlowTheme.tertiaryColor,
+                    textStyle: FlutterFlowTheme.subtitle2.override(
+                      fontFamily: 'Open Sans',
+                      color: FlutterFlowTheme.primaryColor,
+                      fontWeight: FontWeight.w600,
+                    ),
+                    elevation: 5,
+                    borderSide: BorderSide(
+                      color: Colors.transparent,
+                      width: 1,
+                    ),
+                    borderRadius: 10,
+                  ),
+                ).animated([animationsMap['buttonOnPageLoadAnimation8']]),
+              ),
+            ),
+          ),
+        ],
       ),
     );
   }

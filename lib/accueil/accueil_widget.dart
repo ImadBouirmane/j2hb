@@ -82,7 +82,7 @@ class _AccueilWidgetState extends State<AccueilWidget>
                 ),
               );
             },
-          )
+          ),
         ],
         centerTitle: false,
         elevation: 0,
@@ -110,7 +110,7 @@ class _AccueilWidgetState extends State<AccueilWidget>
                       child: Image.asset(
                         'assets/images/Logo.jpeg',
                       ),
-                    )
+                    ),
                   ],
                 ),
                 Padding(
@@ -125,7 +125,7 @@ class _AccueilWidgetState extends State<AccueilWidget>
                           color: FlutterFlowTheme.primaryColor,
                           fontWeight: FontWeight.bold,
                         ),
-                      )
+                      ),
                     ],
                   ),
                 ),
@@ -163,7 +163,7 @@ class _AccueilWidgetState extends State<AccueilWidget>
                           ),
                           borderRadius: 10,
                         ),
-                      ).animated([animationsMap['buttonOnPageLoadAnimation1']])
+                      ).animated([animationsMap['buttonOnPageLoadAnimation1']]),
                     ],
                   ),
                 ),
@@ -201,7 +201,7 @@ class _AccueilWidgetState extends State<AccueilWidget>
                           ),
                           borderRadius: 10,
                         ),
-                      ).animated([animationsMap['buttonOnPageLoadAnimation2']])
+                      ).animated([animationsMap['buttonOnPageLoadAnimation2']]),
                     ],
                   ),
                 ),
@@ -239,13 +239,13 @@ class _AccueilWidgetState extends State<AccueilWidget>
                           ),
                           borderRadius: 10,
                         ),
-                      ).animated([animationsMap['buttonOnPageLoadAnimation3']])
+                      ).animated([animationsMap['buttonOnPageLoadAnimation3']]),
                     ],
                   ),
-                )
+                ),
               ],
             ),
-          )
+          ),
         ],
       ),
     );

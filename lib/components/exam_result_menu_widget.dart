@@ -78,7 +78,7 @@ class _ExamResultMenuWidgetState extends State<ExamResultMenuWidget> {
                               fontWeight: FontWeight.bold,
                             ),
                           ),
-                        )
+                        ),
                       ],
                     ),
                   ),
@@ -115,11 +115,11 @@ class _ExamResultMenuWidgetState extends State<ExamResultMenuWidget> {
                               fontWeight: FontWeight.bold,
                             ),
                           ),
-                        )
+                        ),
                       ],
                     ),
                   ),
-                )
+                ),
               ],
             ),
           ),

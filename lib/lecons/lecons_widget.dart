@@ -149,12 +149,12 @@ class _LeconsWidgetState extends State<LeconsWidget>
                                     color: FlutterFlowTheme.primaryColor,
                                     fontWeight: FontWeight.w600,
                                   ),
-                                )
+                                ),
                               ],
-                            )
+                            ),
                           ],
                         ),
-                      )
+                      ),
                     ],
                   ),
                 ),
@@ -211,12 +211,12 @@ class _LeconsWidgetState extends State<LeconsWidget>
                                   color: FlutterFlowTheme.primaryColor,
                                   fontWeight: FontWeight.w600,
                                 ),
-                              )
+                              ),
                             ],
-                          )
+                          ),
                         ],
                       ),
-                    )
+                    ),
                   ],
                 ),
               ),
@@ -272,12 +272,12 @@ class _LeconsWidgetState extends State<LeconsWidget>
                                   color: FlutterFlowTheme.primaryColor,
                                   fontWeight: FontWeight.w600,
                                 ),
-                              )
+                              ),
                             ],
-                          )
+                          ),
                         ],
                       ),
-                    )
+                    ),
                   ],
                 ),
               ),
@@ -333,16 +333,16 @@ class _LeconsWidgetState extends State<LeconsWidget>
                                   color: FlutterFlowTheme.primaryColor,
                                   fontWeight: FontWeight.w600,
                                 ),
-                              )
+                              ),
                             ],
-                          )
+                          ),
                         ],
                       ),
-                    )
+                    ),
                   ],
                 ),
               ),
-            ).animated([animationsMap['containerOnPageLoadAnimation4']])
+            ).animated([animationsMap['containerOnPageLoadAnimation4']]),
           ],
         ),
       ),
